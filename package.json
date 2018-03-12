@@ -1,0 +1,43 @@
+{
+  "name": "@bolt/web-components-ssr",
+  "version": "0.0.0",
+  "description": "POC of Twig-based Web Components with PHP-based Server Side Rendering and Webpack. Building off of the wesome work from Samuel Mortenson's Twig Component's Example Project!",
+  "scripts": {
+    "test": "npm run build && bower install web-component-tester && wct",
+    "build": "webpack",
+    "start": "npm run start:php && npm run start:js",
+    "start:php": "cd www && php -S 127.0.0.1:3000",
+    "start:js": "webpack-dev-server",
+    "eslint": "eslint ."
+  },
+  "author": "Salem Ghoweri",
+  "license": "MIT",
+  "dependencies": {
+    "twig": "^1.10.5"
+  },
+  "devDependencies": {
+    "@webcomponents/webcomponentsjs": "^1.0.22",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-minify-webpack-plugin": "^0.2.0",
+    "babel-preset-env": "^1.6.1",
+    "css-loader": "^0.28.7",
+    "eslint": "^4.14.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "fs-extra": "^5.0.0",
+    "inline-source-loader": "^0.0.1",
+    "node-sass": "^4.7.2",
+    "on-build-webpack": "^0.1.0",
+    "raw-loader": "^0.5.1",
+    "sass-loader": "^6.0.6",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7",
+    "webpack-event-plugin": "^1.0.0",
+    "browser-sync-webpack-plugin": "^2.0.1",
+    "browser-sync": "^2.23.6"
+  },
+  "files": [
+    "www"
+  ]
+}

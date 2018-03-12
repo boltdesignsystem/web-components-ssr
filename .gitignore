@@ -1,0 +1,7 @@
+node_modules
+dist
+www/build
+vendor
+packages/php-ssr/vendor
+bower_components
+.idea
