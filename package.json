@@ -5,7 +5,7 @@
   "scripts": {
     "test": "npm run build && bower install web-component-tester && wct",
     "build": "webpack",
-    "start": "npm run start:php && npm run start:js",
+    "start": "concurrently \"npm run start:php\" \"npm run start:js\"",
     "start:php": "cd www && php -S 127.0.0.1:3000",
     "start:js": "webpack-dev-server",
     "eslint": "eslint ."
@@ -13,6 +13,7 @@
   "author": "Salem Ghoweri",
   "license": "MIT",
   "dependencies": {
+    "concurrently": "^3.5.1",
     "twig": "^1.10.5"
   },
   "devDependencies": {
@@ -21,6 +22,8 @@
     "babel-loader": "^7.1.2",
     "babel-minify-webpack-plugin": "^0.2.0",
     "babel-preset-env": "^1.6.1",
+    "browser-sync": "^2.23.6",
+    "browser-sync-webpack-plugin": "^2.0.1",
     "css-loader": "^0.28.7",
     "eslint": "^4.14.0",
     "eslint-config-airbnb-base": "^12.1.0",
@@ -33,9 +36,7 @@
     "sass-loader": "^6.0.6",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7",
-    "webpack-event-plugin": "^1.0.0",
-    "browser-sync-webpack-plugin": "^2.0.1",
-    "browser-sync": "^2.23.6"
+    "webpack-event-plugin": "^1.0.0"
   },
   "files": [
     "www"

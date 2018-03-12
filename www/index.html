@@ -87,23 +87,11 @@
       </ul> -->
       <div class="component-demo">
         <p>This is a basic example using an image asset.</p>
-        <code>&lt;tce-hero src=&quot;./assets/hero-2.jpg&quot; text=&quot;You can do a lot&quot; subtext=&quot;With this awesome Hero&quot; callout-text=&quot;Learn more&quot; callout-href=&quot;#test&quot;&gt;&lt;/tce-hero&gt;</code>
         <tce-hero src="./assets/hero-2.jpg" text="You can do a lot" subtext="With this awesome Hero" callout-text="Learn more" callout-href="#test" align="left"></tce-hero>
       </div>
       <div class="component-demo">
         <p>This example uses custom alignment and styling.</p>
-        <code>
-          &lt;style&gt;<br />
-          &nbsp;&nbsp;#styled-hero {<br />
-          &nbsp;&nbsp;&nbsp;--font: &quot;Times New Roman&quot;, Times, serif;<br />
-          &nbsp;&nbsp;&nbsp;--text-color: #016e9e;<br />
-          &nbsp;&nbsp;&nbsp;--subtext-color: #016e9e;<br />
-          &nbsp;&nbsp;&nbsp;--callout-color: #ffffff;<br />
-          &nbsp;&nbsp;&nbsp;--callout-hover-color: #016e9e;<br />
-          &nbsp;&nbsp;}<br />
-          &lt;/style&gt;<br />
-          &lt;tce-hero id=&quot;styled-hero&quot; src=&quot;./assets/hero-1.jpg&quot; text=&quot;Oh Buoy&quot; subtext=&quot;Set sail for pun&quot; callout-text=&quot;Engage&quot; callout-href=&quot;#test2&quot; align=&quot;middle&quot;&gt;&lt;/tce-hero&gt;
-        </code>
+        
         <style>
           #styled-hero {
             --font: "Times New Roman", Times, serif;
@@ -117,11 +105,7 @@
       </div>
       <div class="component-demo">
         <p>This example adds a looping video to the media slot, and omits the callout attribute.</p>
-        <code>
-          &lt;tce-hero text=&quot;In a pickle?&quot; subtext=&quot;Earn your chops today&quot; callout-href=&quot;#test3&quot; align=&quot;right&quot;&gt;<br />
-          &nbsp;&nbsp;&lt;video autoplay loop src=&quot;./assets/hero-3.webm&quot; slot=&quot;media&quot; style=&quot;max-width: 100%;&quot;&gt;&lt;/video&gt;<br />
-          &lt;/tce-hero&gt;<br />
-        </code>
+       
         <tce-hero text="In a pickle?" subtext="Earn your chops today" callout-href="#test3" align="right">
           <video autoplay loop src="./assets/hero-3.webm" slot="media" style="max-width: 100%;"></video>
         </tce-hero>
